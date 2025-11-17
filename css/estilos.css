@@ -264,3 +264,63 @@ footer a:hover {
 .asignatura {
     text-decoration: underline;
 }
+/*RESPONSIV*/
+@media (max-width: 800px) {
+
+    /* Hacemos la fuente del header más pequeña */
+    .main-header h1 {
+        font-size: 2.2em;
+        /* Más pequeño que 3em */
+    }
+
+    .main-header h2 {
+        font-size: 1em;
+        /* Más pequeño que 1.2em */
+    }
+
+    /* Hacemos que los enlaces del menú ocupen todo el ancho 
+       y se pongan uno debajo del otro (en columna) */
+    .menu a {
+        display: block;
+        /* Los convertimos en bloque */
+        margin: 10px 0;
+        /* Añadimos espacio vertical */
+        transform: none;
+        /* Quitamos el efecto hover de mover */
+    }
+
+    .menu a:hover {
+        transform: none;
+        /* Quitamos el efecto hover de mover */
+    }
+
+    /* Hacemos que el contenido principal ocupe el 100% 
+       y reducimos los bordes */
+    .contenido-principal {
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 0 10px;
+    }
+
+    /* Reducimos el padding (espacio interno) de las cajas */
+    .caja {
+        padding: 20px;
+    }
+
+    /* Hacemos que la foto de perfil ocupe el 100% del 
+       ancho disponible y tenga altura automática */
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hacemos la fuente de la tabla más pequeña 
+       para que quepa mejor en pantallas estrechas */
+    .tabla-estilo th,
+    .tabla-estilo td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+        /* Reducimos el tamaño de la fuente */
+    }
+
+}
